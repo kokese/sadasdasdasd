@@ -46,11 +46,11 @@ bot.on("ready", async () => {
 
 bot.on('message', message => {
 if(message.content.startsWith(prefix + 'join')) {
-      bot.channels.get('478033724894871573').join().then(() => message.channel.send(`Done`));
+      bot.channels.get('254338104238800896').join().then(() => message.channel.send(`Done`));
 }
 });
 bot.on('message', function(message) {
-	const myID = "452191687159185409";
+	const myID = "254338104238800896";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
 		        if(message.author.id !== myID) return;
